@@ -130,4 +130,13 @@ namespace PolymorphismExerciseTracking
             List<Activity> activities = new List<Activity>();
 
             activities.Add(new Running(new DateTime(2024, 4, 10), 30, 3.0));
-            activities.Add(new Cycling(new DateTime(
+            activities.Add(new Cycling(new DateTime(2024, 4, 11), 45, 20.0));
+            activities.Add(new Swimming(new DateTime(2024, 4, 12), 60, 20));
+
+            foreach (var activity in activities)
+            {
+                Console.WriteLine(activity.GetSummary());
+            }
+        }
+    }
+}
